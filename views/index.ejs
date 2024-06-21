@@ -1,32 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Donate</title>
+    <title>The Sparks Foundation - Donate</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
-
 <body>
     <div class="container">
-        <h1>Donate</h1>
-        <h2 style="text-align: center"> Contribution can make a world of difference <br> Donate now to support a great
-            cause!</h2>
-        <form action="/donate" method="POST">
-            <div style="display: flex; justify-content: center; gap: 35px; flex-wrap: wrap;">
-                <div>
-                    <label for="amount">Amount (₹):</label>
-                    <input type="number" name="amount" id="amount" required>
+        <header>
+            <h1>Support The Sparks Foundation</h1>
+            <h2>Contribution can make a world of difference</h2>
+            <p>Donate now to support a great cause!</p>
+        </header>
+        
+        <section class="donation-form-section">
+            <form action="/donate" method="POST">
+                <div class="form-fields">
+                    <div class="form-group">
+                        <label for="amount">Amount (₹):</label>
+                        <input type="number" name="amount" id="amount" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                    </div>
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
-                </div>
-            </div>
-            <button class="gradient-button" type="submit"><span class="inner-span">Donate</span></button>
-        </form>
+                <button class="gradient-button" type="submit"><span class="inner-span">Donate</span></button>
+            </form>
+        </section>
+        
+        <section class="impact-section">
+            <h2>How Your Donation Helps</h2>
+            <p>Your contributions help us:</p>
+            <ul>
+                <li>Provide scholarships and educational resources to underprivileged students</li>
+                <li>Develop community projects that foster learning and growth</li>
+                <li>Organize workshops and training sessions for skill development</li>
+                <li>Support innovative programs that promote lifelong learning</li>
+            </ul>
+        </section>
     </div>
 </body>
-
 </html>
